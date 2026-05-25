@@ -26,7 +26,7 @@
                 <focusedlayout width="320" height="300">
                     <include content="settings_menuitem">
                         <param name="active" value="true" />
-                    </include>                
+                    </include>
                 </focusedlayout>
                 <content>
                     <item>
@@ -72,7 +72,7 @@
                 <focusedlayout width="320" height="300">
                     <include content="settings_menuitem">
                         <param name="active" value="true" />
-                    </include>                
+                    </include>
                 </focusedlayout>
                 <content>
                     <item>
@@ -111,10 +111,10 @@
                         <icon>icons/settings/unfussy.png</icon>
                     </item>
                     <item>
-                        <label>LibreELEC</label>
-                        <onclick>RunAddon(service.libreelec.settings)</onclick>
+                        <label>CoreELEC</label>
+                        <onclick>RunAddon(service.coreelec.settings)</onclick>
                         <icon>icons/settings/libreelec.png</icon>
-                        <visible>System.HasAddon(service.libreelec.settings)</visible>
+                        <visible>System.HasAddon(service.coreelec.settings)</visible>
                     </item>
                     <item>
                         <label>$LOCALIZE[13200]</label>

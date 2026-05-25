@@ -67,8 +67,35 @@
             <aspectratio>scale</aspectratio>
             <texture colordiffuse="backgroundtransparent">colors/white.png</texture>
         </control>
+
+        <!-- 1. DYNAMICKÉ POZADIE Z WIDGETU -->
         <control type="image">
-            <visible>!Player.HasVideo</visible>
+            <visible>!Player.HasVideo + !String.IsEmpty(Container.ListItem.Art(fanart))</visible>
+            <left>0</left>
+            <top>0</top>
+            <width>100%</width>
+            <height>100%</height>
+            <aspectratio>scale</aspectratio>
+            <texture>$INFO[Container.ListItem.Art(fanart)]</texture>
+            <fadetime>300</fadetime>
+        </control>
+
+        <!-- STMAVOVACÍ OVERLAY: Zobrazí sa nad dynamickým fanartom, aby sa dali čítať texty -->
+        <control type="image">
+            <visible>!Player.HasVideo + !String.IsEmpty(Container.ListItem.Art(fanart))</visible>
+            <left>0</left>
+            <top>0</top>
+            <width>100%</width>
+            <height>100%</height>
+            <aspectratio>scale</aspectratio>
+            <!-- Použijeme čiernu farbu (80000000 až D0000000 určuje priehľadnosť v HEX kóde) -->
+            <!-- Hodnota b0000000 je cca 70% nepriehľadná čierna. Ak je to moc tmavé, skús 80000000 (50%) -->
+            <texture colordiffuse="cc000000">colors/white.png</texture>
+        </control>
+
+        <!-- 2. TVOJE STATICKÉ POZADIE (Záloha) -->
+        <control type="image">
+            <visible>!Player.HasVideo + String.IsEmpty(Container.ListItem.Art(fanart))</visible>
             <left>0</left>
             <top>0</top>
             <width>100%</width>

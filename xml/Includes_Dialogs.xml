@@ -3,9 +3,9 @@
 
     <expression name="settings_full">
         ![
-            Window.Is(osdaudiosettings) | 
-            Window.Is(osdsubtitlesettings) | 
-            Window.Is(osdvideosettings) | 
+            Window.Is(osdaudiosettings) |
+            Window.Is(osdsubtitlesettings) |
+            Window.Is(osdvideosettings) |
             Window.Is(osdcmssettings)
         ]
     </expression>
@@ -233,17 +233,47 @@
         <definition>
             <control type="group">
                 <visible>!$PARAM[active]</visible>
+                <!-- POZADIE -->
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
                     <width>300</width>
                     <height>280</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="backgrounddark">colors/white.png</texture>
-                    <bordertexture colordiffuse="border" border="1">colors/white.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <texture colordiffuse="88000000">colors/white.png</texture>
+                </control>
+                <!-- RÁMIK - neaktívny -->
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>300</width>
+                    <height>1</height>
+                    <texture colordiffuse="border">colors/white.png</texture>
                 </control>
                 <control type="image">
+                    <left>0</left>
+                    <top>279</top>
+                    <width>300</width>
+                    <height>1</height>
+                    <texture colordiffuse="border">colors/white.png</texture>
+                </control>
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1</width>
+                    <height>280</height>
+                    <texture colordiffuse="border">colors/white.png</texture>
+                </control>
+                <control type="image">
+                    <left>299</left>
+                    <top>0</top>
+                    <width>1</width>
+                    <height>280</height>
+                    <texture colordiffuse="border">colors/white.png</texture>
+                </control>
+                <!-- SPODNÝ PÁS -->
+                <control type="image">
+                    <visible>false</visible>
                     <left>1</left>
                     <top>200</top>
                     <width>298</width>
@@ -251,6 +281,7 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="background">backgrounds/overlay_background.png</texture>
                 </control>
+                <!-- IKONA -->
                 <control type="image">
                     <top>0</top>
                     <left>50</left>
@@ -260,6 +291,7 @@
                     <aspectratio>scale</aspectratio>
                     <texture colordiffuse="inactive">$INFO[ListItem.Icon]</texture>
                 </control>
+                <!-- ČIARA NAD SPODNÝM PÁSOM -->
                 <control type="image">
                     <left>1</left>
                     <top>200</top>
@@ -271,17 +303,47 @@
             </control>
             <control type="group">
                 <visible>$PARAM[active]</visible>
+                <!-- POZADIE -->
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
                     <width>300</width>
                     <height>280</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="backgrounddark">colors/white.png</texture>
-                    <bordertexture colordiffuse="activedialog" border="1">colors/white.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <texture colordiffuse="CC000000">colors/white.png</texture>
+                </control>
+                <!-- RÁMIK - aktívny -->
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>300</width>
+                    <height>1</height>
+                    <texture colordiffuse="activedialog">colors/white.png</texture>
                 </control>
                 <control type="image">
+                    <left>0</left>
+                    <top>279</top>
+                    <width>300</width>
+                    <height>1</height>
+                    <texture colordiffuse="activedialog">colors/white.png</texture>
+                </control>
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1</width>
+                    <height>280</height>
+                    <texture colordiffuse="activedialog">colors/white.png</texture>
+                </control>
+                <control type="image">
+                    <left>299</left>
+                    <top>0</top>
+                    <width>1</width>
+                    <height>280</height>
+                    <texture colordiffuse="activedialog">colors/white.png</texture>
+                </control>
+                <!-- SPODNÝ PÁS -->
+                <control type="image">
+                    <visible>false</visible>
                     <left>1</left>
                     <top>200</top>
                     <width>298</width>
@@ -289,6 +351,7 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="activedialog">backgrounds/overlay_background.png</texture>
                 </control>
+                <!-- IKONA -->
                 <control type="image">
                     <top>0</top>
                     <left>50</left>
@@ -298,6 +361,7 @@
                     <aspectratio>scale</aspectratio>
                     <texture colordiffuse="activedialog">$INFO[ListItem.Icon]</texture>
                 </control>
+                <!-- ČIARA NAD SPODNÝM PÁSOM -->
                 <control type="image">
                     <left>1</left>
                     <top>200</top>
@@ -1980,7 +2044,7 @@
             <width>1300</width>
             <height>750</height>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="backgrounddark">colors/white.png</texture>                
+            <texture colordiffuse="backgrounddark">colors/white.png</texture>
             <bordertexture colordiffuse="border">colors/white.png</bordertexture>
             <bordersize>2</bordersize>
         </control>
@@ -2001,7 +2065,7 @@
             <texture colordiffuse="activedialogdark">colors/white.png</texture>
             <bordertexture colordiffuse="border">colors/white.png</bordertexture>
             <bordersize>2</bordersize>
-        </control>        
+        </control>
         <control type="image">
             <top>239</top>
             <left>1311</left>
@@ -2045,7 +2109,7 @@
             <height>62</height>
             <aspectratio>stretch</aspectratio>
             <texture colordiffuse="active">colors/white.png</texture>
-        </control>        
+        </control>
     </include>
 
     <include name="dialog_settings_backgrounds_light">
@@ -2056,7 +2120,7 @@
             <width>1000</width>
             <height>350</height>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>                
+            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>
         </control>
         <control type="image">
             <visible>Window.Is(osdsubtitlesettings)</visible>
@@ -2065,7 +2129,7 @@
             <width>1000</width>
             <height>300</height>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>                
+            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>
         </control>
         <control type="image">
             <visible>Window.Is(osdvideosettings)</visible>
@@ -2074,7 +2138,7 @@
             <width>1000</width>
             <height>590</height>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>                
+            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>
         </control>
         <control type="image">
             <visible>Window.Is(osdcmssettings)</visible>
@@ -2083,7 +2147,7 @@
             <width>1000</width>
             <height>150</height>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>                
+            <texture colordiffuse="backgroundtransparent">colors/white.png</texture>
         </control>
     </include>
 
@@ -2106,7 +2170,7 @@
             <texture colordiffuse="activedialogdark">colors/white.png</texture>
             <bordertexture colordiffuse="border">colors/white.png</bordertexture>
             <bordersize>2</bordersize>
-        </control>        
+        </control>
     </include>
 
     <include name="dialog_globalsearch_decoration">
@@ -2143,6 +2207,6 @@
                 <shadowcolor>black</shadowcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-        </definition>        
+        </definition>
     </include>
 </includes>

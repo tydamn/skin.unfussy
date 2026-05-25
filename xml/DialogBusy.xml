@@ -37,7 +37,7 @@
             <top>650</top>
             <align>center</align>
             <font>light60</font>
-            <label>$INFO[Player.Title]</label>
+            <!-- <label>$INFO[Player.Title]</label> -->
             <shadowcolor>black</shadowcolor>
         </control>
     </controls>

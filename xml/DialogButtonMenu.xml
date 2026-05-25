@@ -36,19 +36,19 @@
                 <content>
                     <item>
                         <label>$LOCALIZE[13012]</label>
-                        <icon>icons/powermenu/exit.png</icon> 
+                        <icon>icons/powermenu/exit.png</icon>
                         <onclick>Quit()</onclick>
                         <visible>System.ShowExitButton</visible>
                     </item>
                     <item>
                         <label>$LOCALIZE[13016]</label>
-                        <icon>icons/powermenu/powerdown.png</icon> 
+                        <icon>icons/powermenu/powerdown.png</icon>
                         <onclick>Powerdown()</onclick>
                         <visible>System.CanPowerDown</visible>
                     </item>
                     <item>
                         <label>$LOCALIZE[20150]</label>
-                        <icon>icons/powermenu/shutdowntimer.png</icon> 
+                        <icon>icons/powermenu/shutdowntimer.png</icon>
                         <onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
                         <visible>!System.HasAlarm(shutdowntimer)</visible>
                         <visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
@@ -102,6 +102,11 @@
                         <icon>icons/powermenu/inhibitidleshutdown.png</icon>
                         <onclick>InhibitIdleShutdown(false)</onclick>
                         <visible>System.HasShutdown + System.IsInhibit</visible>
+                    </item>
+                    <item>
+                        <label>$LOCALIZE[20183]</label>
+                        <icon>icons/powermenu/reload.png</icon>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                 </content>
             </control>

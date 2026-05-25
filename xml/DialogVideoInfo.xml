@@ -315,7 +315,6 @@
             <align>center</align>
             <textcolor>active</textcolor>
             <label>$VAR[VideoInfoHelpText]</label>
-            <include>positioning_videoinfo_buttons</include>
         </control>
         <include content="actors_header" />
         <control type="group">

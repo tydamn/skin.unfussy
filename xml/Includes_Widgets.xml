@@ -923,12 +923,31 @@
                     <param name="active">$PARAM[active]</param>
                 </include>
                 <control type="image">
+                    <visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
                     <left>1</left>
                     <top>1</top>
                     <width>344</width>
                     <height>198</height>
                     <aspectratio>scale</aspectratio>
-                    <texture>$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(fanart)) + !String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <left>1</left>
+                    <top>1</top>
+                    <width>344</width>
+                    <height>198</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(landscape)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <left>1</left>
+                    <top>1</top>
+                    <width>344</width>
+                    <height>198</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <control type="label">
                     <top>200</top>
@@ -976,7 +995,7 @@
                     <height>198</height>
                     <aspectratio>scale</aspectratio>
                     <texture>$INFO[ListItem.Art(thumb)]</texture>
-                </control>        
+                </control>
                 <control type="label">
                     <top>200</top>
                     <left>185</left>
@@ -1012,25 +1031,71 @@
 
     <include name="widget_item_favorites">
         <param name="active">false</param>
+        <param name="id"></param>
         <definition>
             <control type="group">
-                <width>250</width>
+                <width>302</width>
                 <include content="widget_item_back">
                     <param name="active">$PARAM[active]</param>
+                    <param name="heightactive">79</param>
                 </include>
+
+                <!-- Favorites in the same visual size/layout as thumb large (16:9). -->
                 <control type="image">
-                    <top>20</top>
-                    <left>45</left>
-                    <width>160</width>
-                    <height>160</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
-                <control type="label">
-                    <top>200</top>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + String.IsEmpty(ListItem.Art(fanart)) + !String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(landscape)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                </control>
+
+                <control type="textbox">
+                    <visible>$PARAM[active]</visible>
+                    <top>171</top>
                     <left>10</left>
-                    <width>230</width>
-                    <height>50</height>
+                    <width>280</width>
+                    <height>77</height>
+                    <font>regular24</font>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                    <autoscroll delay="1000" time="1000" repeat="2000">Control.HasFocus($PARAM[id])</autoscroll>
+                </control>
+                <control type="textbox">
+                    <visible>!$PARAM[active]</visible>
+                    <top>171</top>
+                    <left>10</left>
+                    <width>280</width>
+                    <height>77</height>
                     <font>regular24</font>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1039,6 +1104,7 @@
                 <include content="widget_item_action">
                     <param name="active" value="$PARAM[active]" />
                     <param name="icon" value="buttons/play" />
+                    <param name="showduration" value="false" />
                 </include>
             </control>
         </definition>
@@ -1054,20 +1120,50 @@
                     <param name="active">$PARAM[active]</param>
                     <param name="heightactive">75</param>
                 </include>
+                <!-- Addon-path thumb / landscape 16:9 style. Prefer real thumb first,
+                     then wide artwork, and use Icon only as fallback. -->
                 <control type="image">
+                    <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                     <top>1</top>
                     <left>1</left>
                     <width>248</width>
-                    <height>186</height>
+                    <height>140</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>248</width>
+                    <height>140</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + String.IsEmpty(ListItem.Art(fanart)) + !String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>248</width>
+                    <height>140</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(landscape)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>248</width>
+                    <height>140</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="textbox">
                     <visible>$PARAM[active]</visible>
-                    <top>186</top>
+                    <top>144</top>
                     <left>10</left>
                     <width>230</width>
-                    <height>70</height>
+                    <height>80</height>
                     <font>regular24</font>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1076,10 +1172,10 @@
                 </control>
                 <control type="textbox">
                     <visible>!$PARAM[active]</visible>
-                    <top>186</top>
+                    <top>144</top>
                     <left>10</left>
                     <width>230</width>
-                    <height>70</height>
+                    <height>80</height>
                     <font>regular24</font>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1098,25 +1194,55 @@
         <param name="id"></param>
         <definition>
             <control type="group">
-                <width>300</width>
+                <width>302</width>
                 <include content="widget_item_back">
                     <param name="active">$PARAM[active]</param>
-                    <param name="heightactive">75</param>
+                    <param name="heightactive">80</param>
                 </include>
+                <!-- Addon-path large thumb / landscape 16:9 style. Prefer real thumb first,
+                     then wide artwork, and use Icon only as fallback. -->
                 <control type="image">
+                    <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                     <top>1</top>
                     <left>1</left>
-                    <width>298</width>
-                    <height>223</height>
+                    <width>300</width>
+                    <height>169</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + !String.IsEmpty(ListItem.Art(fanart))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + String.IsEmpty(ListItem.Art(fanart)) + !String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(landscape)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(thumb)) + String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(landscape))</visible>
+                    <top>1</top>
+                    <left>1</left>
+                    <width>300</width>
+                    <height>169</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="textbox">
                     <visible>$PARAM[active]</visible>
-                    <top>225</top>
+                    <top>172</top>
                     <left>10</left>
                     <width>280</width>
-                    <height>70</height>
+                    <height>74</height>
                     <font>regular24</font>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1125,10 +1251,10 @@
                 </control>
                 <control type="textbox">
                     <visible>!$PARAM[active]</visible>
-                    <top>225</top>
+                    <top>172</top>
                     <left>10</left>
                     <width>280</width>
-                    <height>70</height>
+                    <height>74</height>
                     <font>regular24</font>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1151,15 +1277,37 @@
                     <param name="active">$PARAM[active]</param>
                     <param name="heightactive">70</param>
                 </include>
+
+                <!-- Prefer real poster art for addon-path poster widgets.
+                     ListItem.Icon can be landscape/fanart for some plugins. -->
                 <control type="image">
+                    <visible>!String.IsEmpty(ListItem.Art(poster))</visible>
                     <left>1</left>
                     <top>1</top>
                     <width>248</width>
                     <height>373</height>
                     <aspectratio>scale</aspectratio>
-                    <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture background="true">$INFO[ListItem.Art(poster)]</texture>
                 </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Art(thumb))</visible>
+                    <left>1</left>
+                    <top>1</top>
+                    <width>248</width>
+                    <height>373</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+                </control>
+                <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(thumb))</visible>
+                    <left>1</left>
+                    <top>1</top>
+                    <width>248</width>
+                    <height>373</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                </control>
+
                 <control type="label">
                     <top>375</top>
                     <left>10</left>
