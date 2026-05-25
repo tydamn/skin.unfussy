@@ -1,1 +1,544 @@
+# Kodi Media Center language file
+# Addon Name: Materialized
+# Addon id: skin.estuary
+# Addon Provider: phil65, Ichabod Fletchman
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: /xml/Home.xml /xml/DialogSeekBar.xml
+msgctxt "#31000"
+msgid "Sorted by"
+msgstr "Zoradené podľa"
+
+msgctxt "#31001"
+msgid "page"
+msgstr "strana"
+
+msgctxt "#31002"
+msgid "Event log"
+msgstr "Denník udalostí"
+
+msgctxt "#31003"
+msgid "Player process info"
+msgstr "Informácie o procese prehrávača"
+
+msgctxt "#31004"
+msgid "PVR info"
+msgstr "Informácie PVR"
+
+msgctxt "#31005"
+msgid "Video decoder"
+msgstr "Video dekodér"
+
+msgctxt "#31006"
+msgid "hardware decoding"
+msgstr "hardvérové dekódovanie"
+
+msgctxt "#31007"
+msgid "software decoding"
+msgstr "softvérové dekódovanie"
+
+msgctxt "#31007"
+msgid "Pixel format"
+msgstr "Formát pixelov"
+
+msgctxt "#31008"
+msgid "System memory usage"
+msgstr "Využitie systémovej pamäte"
+
+msgctxt "#31009"
+msgid "Previous chapter"
+msgstr "Predchádzajúca kapitola"
+
+msgctxt "#31010"
+msgid "Big Jump back"
+msgstr "Veľký skok späť"
+
+msgctxt "#31011"
+msgid "Next chapter"
+msgstr "Ďalšia kapitola"
+
+msgctxt "#31012"
+msgid "Big Jump forward"
+msgstr "Veľký skok vpred"
+
+msgctxt "#31013"
+msgid "Seek back"
+msgstr "Posunúť späť"
+
+msgctxt "#31014"
+msgid "Seek forward"
+msgstr "Posunúť vpred"
+
+msgctxt "#31015"
+msgid "Jump"
+msgstr "Skok"
+
+msgctxt "#31016"
+msgid "Toggle audio stream"
+msgstr "Prepnúť zvukovú stopu"
+
+msgctxt "#31017"
+msgid "Select Resolution"
+msgstr "Vybrať rozlíšenie"
+
+msgctxt "#31018"
+msgid "Channel List"
+msgstr "Zoznam kanálov"
+
+msgctxt "#31019"
+msgid "items"
+msgstr "položiek"
+
+msgctxt "#31020"
+msgid "YouTube Videos"
+msgstr "Videá YouTube"
+
+msgctxt "#31021"
+msgid "Search for TV Show"
+msgstr "Hľadať seriál"
+
+msgctxt "#31022"
+msgid "Search for movie"
+msgstr "Hľadať film"
+
+msgctxt "#31023"
+msgid "No Search results"
+msgstr "Žiadne výsledky vyhľadávania"
+
+msgctxt "#31024"
+msgid "TheMovieDB"
+msgstr "TheMovieDB"
+
+msgctxt "#31025"
+msgid "Crew"
+msgstr "Štáb"
+
+msgctxt "#31026"
+msgid "Recommended Movies"
+msgstr "Odporúčané filmy"
+
+msgctxt "#31027"
+msgid "Official Videos"
+msgstr "Oficiálne videá"
+
+msgctxt "#31028"
+msgid "Roles of"
+msgstr "Úlohy používateľa"
+
+msgctxt "#31029"
+msgid "in Movies"
+msgstr "vo filmoch"
+
+msgctxt "#31030"
+msgid "in TV Shows"
+msgstr "v seriáloch"
+
+msgctxt "#31031"
+msgid "Pictures of"
+msgstr "Obrázky používateľa"
+
+msgctxt "#31032"
+msgid "More Pictures of"
+msgstr "Ďalšie obrázky používateľa"
+
+msgctxt "#31033"
+msgid "Timeshift"
+msgstr "Časový posun"
+
+msgctxt "#31034"
+msgid "Start of Timeshift"
+msgstr "Začiatok časového posunu"
+
+msgctxt "#31035"
+msgid "Live TV"
+msgstr "Živé TV vysielanie"
+
+msgctxt "#31036"
+msgid "Repository"
+msgstr "Repozitár"
+
+msgctxt "#31037"
+msgid "System memory usage"
+msgstr "Využitie systémovej pamäte"
+
+msgctxt "#31038"
+msgid "Version info"
+msgstr "Informácie o verzii"
+
+msgctxt "#31039"
+msgid "Order"
+msgstr "Poradie"
+
+msgctxt "#31040"
+msgid "Channel options"
+msgstr "Možnosti kanála"
+
+msgctxt "#31041"
+msgid "Misc options"
+msgstr "Rôzne možnosti"
+
+msgctxt "#31042"
+msgid "Numeric pad"
+msgstr "Číselná klávesnica"
+
+msgctxt "#31043"
+msgid "Available groups"
+msgstr "Dostupné skupiny"
+
+msgctxt "#31044"
+msgid "Add group"
+msgstr "Pridať skupinu"
+
+msgctxt "#31045"
+msgid "Rename group"
+msgstr "Premenovať skupinu"
+
+msgctxt "#31046"
+msgid "Delete group"
+msgstr "Odstrániť skupinu"
+
+msgctxt "#31047"
+msgid "Last logged in"
+msgstr "Naposledy prihlásený"
+
+msgctxt "#31048"
+msgid "Show login screen on startup"
+msgstr "Zobraziť prihlasovaciu obrazovku pri štarte"
+
+msgctxt "#31049"
+msgid "Automatic Login on startup"
+msgstr "Automatické prihlásenie pri štarte"
+
+msgctxt "#31050"
+msgid "Select your Kodi user profile[CR]to login and continue"
+msgstr "Vyberte svoj používateľský profil Kodi[CR]pre prihlásenie a pokračovanie"
+
+msgctxt "#31051"
+msgid "Power Options"
+msgstr "Možnosti napájania"
+
+msgctxt "#31052"
+msgid "Available in Database"
+msgstr "Dostupné v databáze"
+
+msgctxt "#31053"
+msgid "TV recommendations"
+msgstr "TV odporúčania"
+
+msgctxt "#31054"
+msgid "No bookmarks created yet"
+msgstr "Zatiaľ nie sú vytvorené žiadne záložky"
+
+msgctxt "#31055"
+msgid "Loading Trailer"
+msgstr "Načítava sa trailer"
+
+msgctxt "#31056"
+msgid "Rated"
+msgstr "Hodnotenie"
+
+msgctxt "#31057"
+msgid "Mood"
+msgstr "Nálada"
+
+msgctxt "#31058"
+msgid "Show Fanart background"
+msgstr "Zobraziť Fanart pozadie"
+
+msgctxt "#31059"
+msgid "Show visualisation effects"
+msgstr "Zobraziť vizualizačné efekty"
+
+msgctxt "#31060"
+msgid "Show scrolling song information"
+msgstr "Zobraziť posúvajúce sa informácie o skladbe"
+
+msgctxt "#31061"
+msgid "Visualisation settings"
+msgstr "Nastavenia vizualizácie"
+
+msgctxt "#31062"
+msgid "Lyrics add-on"
+msgstr "Doplnok pre texty piesní"
+
+msgctxt "#31063"
+msgid "4 Channels"
+msgstr "4 kanály"
+
+msgctxt "#31064"
+msgid "6 Channels"
+msgstr "6 kanálov"
+
+msgctxt "#31065"
+msgid "8 Channels"
+msgstr "8 kanálov"
+
+msgctxt "#31066"
+msgid "10 Channels"
+msgstr "10 kanálov"
+
+msgctxt "#31067"
+msgid "Next Location"
+msgstr "Ďalšia poloha"
+
+msgctxt "#31068"
+msgid "Choose Icons"
+msgstr "Vybrať ikony"
+
+msgctxt "#31069"
+msgid "Forcast next days"
+msgstr "Predpoveď na ďalšie dni"
+
+msgctxt "#31070"
+msgid "Forcast today"
+msgstr "Predpoveď na dnes"
+
+msgctxt "#31071"
+msgid "Previous song"
+msgstr "Predchádzajúca skladba"
+
+msgctxt "#31072"
+msgid "Next song"
+msgstr "Ďalšia skladba"
+
+msgctxt "#31073"
+msgid "Search in EPG"
+msgstr "Hľadať v EPG"
+
+msgctxt "#31074"
+msgid "Local subtitle available"
+msgstr "Dostupné lokálne titulky"
+
+msgctxt "#31075"
+msgid "Go to playlist"
+msgstr "Prejsť na playlist"
+
+msgctxt "#31076"
+msgid "Video playlist"
+msgstr "Video playlist"
+
+msgctxt "#31077"
+msgid "Music playlist"
+msgstr "Hudobný playlist"
+
+msgctxt "#31078"
+msgid "Playlist options"
+msgstr "Možnosti playlistu"
+
+msgctxt "#31079"
+msgid "Set the type and add rules to create a smart playlist. These playlists are dynamic and include all media items from your database which apply to your chosen rules."
+msgstr "Nastavte typ a pridajte pravidlá na vytvorenie inteligentného playlistu. Tieto playlisty sú dynamické a obsahujú všetky mediálne položky z vašej databázy, ktoré zodpovedajú zvoleným pravidlám."
+
+msgctxt "#31080"
+msgid "Enter text here..."
+msgstr "Sem zadajte text..."
+
+msgctxt "#31081"
+msgid "Match items where"
+msgstr "Zodpovedajúce položky, kde"
+
+msgctxt "#31082"
+msgid "Order"
+msgstr "Poradie"
+
+msgctxt "#31083"
+msgid "Recommended Series"
+msgstr "Odporúčané seriály"
+
+msgctxt "#31084"
+msgid "Search local library"
+msgstr "Hľadať v lokálnej knižnici"
+
+msgctxt "#31085"
+msgid "Search add-ons"
+msgstr "Hľadať v doplnkoch"
+
+msgctxt "#31086"
+msgid "Search YouTube"
+msgstr "Hľadať na YouTube"
+
+msgctxt "#31087"
+msgid "Search TheMovieDB"
+msgstr "Hľadať v TheMovieDB"
+
+msgctxt "#31088"
+msgid "New search"
+msgstr "Nové vyhľadávanie"
+
+msgctxt "#31089"
+msgid "Next View"
+msgstr "Ďalšie zobrazenie"
+
+msgctxt "#31090"
+msgid "Select Resolution"
+msgstr "Vybrať rozlíšenie"
+
+msgctxt "#31091"
+msgid "Configure Unfussy"
+msgstr "Konfigurovať Unfussy"
+
+msgctxt "#31092"
+msgid "watched"
+msgstr "pozreté"
+
+msgctxt "#31093"
+msgid "Common Settings"
+msgstr "Všeobecné nastavenia"
+
+msgctxt "#31094"
+msgid "hide home widgets when player is active"
+msgstr "skryť domáce widgety, keď je prehrávač aktívny"
+
+msgctxt "#31095"
+msgid "show detailed information for selected broadcast"
+msgstr "zobraziť podrobné informácie pre vybrané vysielanie"
+
+msgctxt "#31096"
+msgid "start live tv after watched a recording"
+msgstr "spustiť živé TV vysielanie po dopozeraní nahrávky"
+
+msgctxt "#31097"
+msgid "use channel groups"
+msgstr "používať skupiny kanálov"
+
+msgctxt "#31098"
+msgid "Home"
+msgstr "Domov"
+
+msgctxt "#31099"
+msgid "Configure\nMenu"
+msgstr "Konfigurovať\nmenu"
+
+msgctxt "#31100"
+msgid "Configure\nWidgets"
+msgstr "Konfigurovať\nwidgety"
+
+msgctxt "#31101"
+msgid "Use animations when navigating in views"
+msgstr "Používať animácie pri navigácii v zobrazeniach"
+
+msgctxt "#31102"
+msgid "Hide channel numbers in all PVR Views"
+msgstr "Skryť čísla kanálov vo všetkých PVR zobrazeniach"
+
+msgctxt "#31103"
+msgid "hide \"all channels\" channelgroup"
+msgstr ""
+
+msgctxt "#31104"
+msgid "activate fullscreen when startimg music song"
+msgstr "aktivovať celú obrazovku pri spustení hudobnej skladby"
+
+msgctxt "#31105"
+msgid "darken posters of already watched media"
+msgstr "stmaviť plagáty už pozretých médií"
+
+msgctxt "#31106"
+msgid "set switch timer"
+msgstr "nastaviť časovač prepnutia"
+
+msgctxt "#31107"
+msgid "movie genre iconset"
+msgstr "sada ikon filmových žánrov"
+
+msgctxt "#31108"
+msgid "Same director"
+msgstr "Rovnaký režisér"
+
+msgctxt "#31109"
+msgid "Use List with broadcasts per channel"
+msgstr "Použiť zoznam s vysielaniami podľa kanála"
+
+msgctxt "#31110"
+msgid "Configure Unfussy"
+msgstr "Konfigurovať Unfussy"
+
+msgctxt "#31111"
+msgid "Common Settings"
+msgstr "Všeobecné nastavenia"
+
+msgctxt "#31112"
+msgid "Customize Home Menu"
+msgstr "Prispôsobiť domovské menu"
+
+msgctxt "#31113"
+msgid "Live TV Settings"
+msgstr "Nastavenia živého TV vysielania"
+
+msgctxt "#31114"
+msgid "not selected"
+msgstr "nevybrané"
+
+msgctxt "#31115"
+msgid "music genre iconset"
+msgstr "sada ikon hudobných žánrov"
+
+msgctxt "#31116"
+msgid "Version"
+msgstr "Verzia"
+
+msgctxt "#31117"
+msgid "jump to prev/next channel group when reaching start/end of channels list"
+msgstr "preskočiť na predchádzajúcu/ďalšiu skupinu kanálov pri dosiahnutí začiatku/konca zoznamu kanálov"
+
+msgctxt "#31118"
+msgid "ends at"
+msgstr "končí o"
+
+msgctxt "#31120"
+msgid "use horizontal layout"
+msgstr "použiť horizontálne rozloženie"
+
+msgctxt "#31121"
+msgid "Now Playing"
+msgstr "Práve sa prehráva"
+
+msgctxt "#31122"
+msgid "till"
+msgstr "do"
+
+msgctxt "#31123"
+msgid "Settings Channel Guide"
+msgstr "Nastavenia sprievodcu kanálmi"
+
+msgctxt "#31124"
+msgid "Settings TV Guide"
+msgstr "Nastavenia TV programu"
+
+msgctxt "#31125"
+msgid "Settings Channel List"
+msgstr "Nastavenia zoznamu kanálov"
+
+msgctxt "#31126"
+msgid "Common LiveTV Settings"
+msgstr "Všeobecné nastavenia živého TV vysielania"
+
+msgctxt "#31127"
+msgid "Settings Movies"
+msgstr "Nastavenia filmov"
+
+msgctxt "#31128"
+msgid "Settings Music"
+msgstr "Nastavenia hudby"
+
+msgctxt "#31129"
+msgid "Miscellaneous"
+msgstr "Rôzne"
+
+msgctxt "#31130"
+msgid "hide lyrics background"
+msgstr "skryť pozadie textov piesní"
+
+msgctxt "#31131"
+msgid "Special Features"
+msgstr "Špeciálne funkcie"
