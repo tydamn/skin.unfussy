@@ -542,3 +542,7 @@ msgstr ""
 msgctxt "#31131"
 msgid "Special Features"
 msgstr ""
+
+msgctxt "#31132"
+msgid "Item"
+msgstr ""

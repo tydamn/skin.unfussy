@@ -542,3 +542,7 @@ msgstr "Hintergrund bei Songtexten verbergen"
 msgctxt "#31131"
 msgid "Special Features"
 msgstr "Special Features"
+
+msgctxt "#31132"
+msgid "Item"
+msgstr "Artikel"

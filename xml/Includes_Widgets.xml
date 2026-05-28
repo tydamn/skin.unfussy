@@ -1118,7 +1118,7 @@
                 <width>250</width>
                 <include content="widget_item_back">
                     <param name="active">$PARAM[active]</param>
-                    <param name="heightactive">75</param>
+                    <param name="heightactive">88</param>
                 </include>
                 <!-- Addon-path thumb / landscape 16:9 style. Prefer real thumb first,
                      then wide artwork, and use Icon only as fallback. -->

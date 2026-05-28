@@ -542,3 +542,7 @@ msgstr "skryť pozadie textov piesní"
 msgctxt "#31131"
 msgid "Special Features"
 msgstr "Špeciálne funkcie"
+
+msgctxt "#31132"
+msgid "Item"
+msgstr "Položka"

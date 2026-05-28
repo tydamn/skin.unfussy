@@ -271,6 +271,7 @@
         <param name="showicon">false</param>
         <param name="icon"></param>
         <param name="show_pvr_running">false</param>
+        <param name="show_listinfo">true</param>
         <definition>
             <control type="group">
                 <include condition="Player.HasVideo">openclose_slight_top</include>
@@ -311,7 +312,7 @@
                 </include>
                 <include condition="$PARAM[show_pvr_running]" content="info_header_pvr_running" />
                 <include>info_header_sortletter</include>
-                <include>info_header_listinfo</include>
+                <include condition="$PARAM[show_listinfo]">info_header_listinfo</include>
                 <include>info_header_music_running</include>
             </control>
         </definition>
