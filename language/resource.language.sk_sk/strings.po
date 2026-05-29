@@ -548,7 +548,7 @@ msgid "Item"
 msgstr "Položka"
 
 msgctxt "#31133"
-msgid "Video decoder"
+msgid "Video Decoder"
 msgstr "Video dekodér"
 
 msgctxt "#31134"
