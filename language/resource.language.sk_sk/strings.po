@@ -549,7 +549,7 @@ msgstr "Položka"
 
 msgctxt "#31133"
 msgid "Video Decoder"
-msgstr "Video dekodér"
+msgstr "Video Dekodér"
 
 msgctxt "#31134"
 msgid "Pixel format"
