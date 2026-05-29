@@ -546,3 +546,23 @@ msgstr "Špeciálne funkcie"
 msgctxt "#31132"
 msgid "Item"
 msgstr "Položka"
+
+msgctxt "#31133"
+msgid "Video decoder"
+msgstr "Video dekóder"
+
+msgctxt "#31134"
+msgid "Pixel format"
+msgstr "Formát pixelov"
+
+msgctxt "#31135"
+msgid "Bit depth"
+msgstr "Bitová hĺbka"
+
+msgctxt "#31136"
+msgid "Cores"
+msgstr "Jadrá"
+
+msgctxt "#31137"
+msgid "Remaining"
+msgstr "Zostáva"

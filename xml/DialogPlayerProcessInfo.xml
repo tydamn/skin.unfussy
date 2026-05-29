@@ -5,7 +5,6 @@
     <onload>Dialog.Close(videoosd)</onload>
     <onunload>Control.SetFocus(200)</onunload>
     <zorder>3</zorder>
-
     <controls>
         <!-- CoreELEC / Kodi Player Process Info -->
         <control type="group">
@@ -13,7 +12,6 @@
             <left>50</left>
             <width>1820</width>
             <height>830</height>
-
             <!-- Hlavné pozadie -->
             <control type="image">
                 <left>0</left>
@@ -23,7 +21,6 @@
                 <aspectratio>stretch</aspectratio>
                 <texture colordiffuse="backgroundtransparent">colors/white.png</texture>
             </control>
-
             <!-- Jemná horná lišta -->
             <control type="image">
                 <left>0</left>
@@ -33,7 +30,6 @@
                 <aspectratio>stretch</aspectratio>
                 <texture colordiffuse="55000000">colors/white.png</texture>
             </control>
-
             <!-- Nadpis -->
             <control type="label">
                 <left>35</left>
@@ -42,9 +38,8 @@
                 <height>42</height>
                 <font>font13</font>
                 <textcolor>white</textcolor>
-                <label>[UPPERCASE]process info[/UPPERCASE]</label>
+                <label>[UPPERCASE]player process info[/UPPERCASE]</label>
             </control>
-
             <control type="label">
                 <visible>!VideoPlayer.Content(livetv)</visible>
                 <left>780</left>
@@ -56,7 +51,6 @@
                 <align>right</align>
                 <label>$INFO[Player.Time] / $INFO[Player.Duration]  •  $INFO[Player.Progress]%  •  $INFO[System.ScreenResolution]</label>
             </control>
-
             <control type="label">
                 <visible>VideoPlayer.Content(livetv)</visible>
                 <left>780</left>
@@ -68,7 +62,6 @@
                 <align>right</align>
                 <label>$INFO[PVR.EpgEventElapsedTime] / $INFO[PVR.EpgEventDuration]  •  $INFO[System.ScreenResolution]</label>
             </control>
-
             <!-- Progress prehrávania - video používa Player.Progress, PVR používa EPG progress -->
             <control type="progress">
                 <visible>!VideoPlayer.Content(livetv)</visible>
@@ -80,7 +73,6 @@
                 <texturebg colordiffuse="55FFFFFF" border="3">progress/texturebg_border_white.png</texturebg>
                 <midtexture colordiffuse="active" border="5,3,5,3">progress/texturebg_white.png</midtexture>
             </control>
-
             <control type="progress">
                 <visible>VideoPlayer.Content(livetv)</visible>
                 <left>35</left>
@@ -91,14 +83,12 @@
                 <texturebg colordiffuse="55FFFFFF" border="3">progress/texturebg_border_white.png</texturebg>
                 <midtexture colordiffuse="active" border="5,3,5,3">progress/texturebg_white.png</midtexture>
             </control>
-
             <!-- Aktuálny titul / kanál -->
             <control type="group">
                 <left>35</left>
                 <top>102</top>
                 <width>1750</width>
                 <height>78</height>
-
                 <control type="label">
                     <left>0</left>
                     <top>0</top>
@@ -108,7 +98,6 @@
                     <textcolor>white</textcolor>
                     <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</label>
                 </control>
-
                 <control type="label">
                     <visible>VideoPlayer.Content(livetv)</visible>
                     <left>0</left>
@@ -119,7 +108,6 @@
                     <textcolor>grey</textcolor>
                     <label>$INFO[VideoPlayer.ChannelNumberLabel] $INFO[VideoPlayer.ChannelName]  •  $INFO[VideoPlayer.ChannelGroup]</label>
                 </control>
-
                 <control type="label">
                     <visible>!VideoPlayer.Content(livetv)</visible>
                     <left>1320</left>
@@ -131,7 +119,6 @@
                     <align>right</align>
                     <label>$INFO[Player.FinishTime]</label>
                 </control>
-
                 <control type="label">
                     <visible>!VideoPlayer.Content(livetv)</visible>
                     <left>1320</left>
@@ -141,9 +128,8 @@
                     <font>font12</font>
                     <textcolor>grey</textcolor>
                     <align>right</align>
-                    <label>Zostáva: $INFO[Player.TimeRemaining]</label>
+                    <label>$LOCALIZE[31137]: $INFO[Player.TimeRemaining]</label>
                 </control>
-
                 <control type="label">
                     <visible>VideoPlayer.Content(livetv)</visible>
                     <left>1320</left>
@@ -155,7 +141,6 @@
                     <align>right</align>
                     <label>$INFO[PVR.EpgEventFinishTime]</label>
                 </control>
-
                 <control type="label">
                     <visible>VideoPlayer.Content(livetv)</visible>
                     <left>1320</left>
@@ -165,17 +150,15 @@
                     <font>font12</font>
                     <textcolor>grey</textcolor>
                     <align>right</align>
-                    <label>Zostáva: $INFO[PVR.EpgEventRemainingTime]</label>
+                    <label>$LOCALIZE[31137]: $INFO[PVR.EpgEventRemainingTime]</label>
                 </control>
             </control>
-
             <!-- ====================== VIDEO ====================== -->
             <control type="group">
                 <left>35</left>
                 <top>205</top>
                 <width>560</width>
                 <height>355</height>
-
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -184,7 +167,6 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="33000000">colors/white.png</texture>
                 </control>
-
                 <control type="label">
                     <left>22</left>
                     <top>16</top>
@@ -194,7 +176,6 @@
                     <textcolor>active</textcolor>
                     <label>[UPPERCASE]$LOCALIZE[157][/UPPERCASE]</label>
                 </control>
-
                 <control type="grouplist">
                     <left>22</left>
                     <top>65</top>
@@ -202,13 +183,12 @@
                     <height>270</height>
                     <orientation>vertical</orientation>
                     <itemgap>7</itemgap>
-
                     <control type="label">
                         <width>516</width>
                         <height>28</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <label>Dekóder: [COLOR grey]$INFO[Player.Process(VideoDecoder)][/COLOR]</label>
+                        <label>$LOCALIZE[31133]: [COLOR grey]$INFO[Player.Process(VideoDecoder)][/COLOR]</label>
                     </control>
                     <control type="label">
                         <width>516</width>
@@ -229,7 +209,7 @@
                         <height>28</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <label>Formát pixelov: [COLOR grey]$INFO[Player.Process(PixFormat)][/COLOR]</label>
+                        <label>$LOCALIZE[31134]: [COLOR grey]$INFO[Player.Process(PixFormat)][/COLOR]</label>
                     </control>
                     <control type="label">
                         <width>516</width>
@@ -254,14 +234,12 @@
                     </control>
                 </control>
             </control>
-
             <!-- ====================== AUDIO ====================== -->
             <control type="group">
                 <left>630</left>
                 <top>205</top>
                 <width>560</width>
                 <height>355</height>
-
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -270,7 +248,6 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="33000000">colors/white.png</texture>
                 </control>
-
                 <control type="label">
                     <left>22</left>
                     <top>16</top>
@@ -280,7 +257,6 @@
                     <textcolor>active</textcolor>
                     <label>[UPPERCASE]$LOCALIZE[292][/UPPERCASE]</label>
                 </control>
-
                 <control type="grouplist">
                     <left>22</left>
                     <top>65</top>
@@ -288,7 +264,6 @@
                     <height>270</height>
                     <orientation>vertical</orientation>
                     <itemgap>7</itemgap>
-
                     <control type="label">
                         <width>516</width>
                         <height>28</height>
@@ -322,7 +297,7 @@
                         <height>28</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <label>Bitová hĺbka: [COLOR grey]$INFO[Player.Process(AudioBitsPerSample)] bit[/COLOR]</label>
+                        <label>$LOCALIZE[31135]: [COLOR grey]$INFO[Player.Process(AudioBitsPerSample)] bit[/COLOR]</label>
                     </control>
                     <control type="label">
                         <width>516</width>
@@ -340,14 +315,12 @@
                     </control>
                 </control>
             </control>
-
             <!-- ====================== SYSTEM ====================== -->
             <control type="group">
                 <left>1225</left>
                 <top>205</top>
                 <width>560</width>
                 <height>355</height>
-
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -356,7 +329,6 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="33000000">colors/white.png</texture>
                 </control>
-
                 <control type="label">
                     <left>22</left>
                     <top>16</top>
@@ -366,7 +338,6 @@
                     <textcolor>active</textcolor>
                     <label>[UPPERCASE]$LOCALIZE[857][/UPPERCASE]</label>
                 </control>
-
                 <control type="grouplist">
                     <left>22</left>
                     <top>65</top>
@@ -374,7 +345,6 @@
                     <height>270</height>
                     <orientation>vertical</orientation>
                     <itemgap>7</itemgap>
-
                     <control type="label">
                         <width>516</width>
                         <height>28</height>
@@ -387,7 +357,7 @@
                         <height>28</height>
                         <font>font12</font>
                         <textcolor>white</textcolor>
-                        <label>Jadrá: [COLOR grey]$INFO[System.CpuUsage][/COLOR]</label>
+                        <label>$LOCALIZE[31136]: [COLOR grey]$INFO[System.CpuUsage][/COLOR]</label>
                     </control>
                     <control type="label">
                         <width>516</width>
@@ -426,7 +396,6 @@
                     </control>
                 </control>
             </control>
-
             <!-- ====================== PVR / LIVE TV ====================== -->
             <control type="group">
                 <visible>VideoPlayer.Content(livetv)</visible>
@@ -434,7 +403,6 @@
                 <top>575</top>
                 <width>1155</width>
                 <height>220</height>
-
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -443,7 +411,6 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="33000000">colors/white.png</texture>
                 </control>
-
                 <control type="label">
                     <left>22</left>
                     <top>14</top>
@@ -453,7 +420,6 @@
                     <textcolor>active</textcolor>
                     <label>[UPPERCASE]PVR / Live TV[/UPPERCASE]</label>
                 </control>
-
                 <control type="grouplist">
                     <left>22</left>
                     <top>62</top>
@@ -461,7 +427,6 @@
                     <height>170</height>
                     <orientation>vertical</orientation>
                     <itemgap>6</itemgap>
-
                     <control type="label">
                         <width>540</width>
                         <height>28</height>
@@ -484,7 +449,6 @@
                         <label>$LOCALIZE[19126]: [COLOR grey]$INFO[VideoPlayer.NextStartTime]  •  $LOCALIZE[19127]: $INFO[VideoPlayer.NextEndTime][/COLOR]</label>
                     </control>
                 </control>
-
                 <control type="grouplist">
                     <left>590</left>
                     <top>62</top>
@@ -492,7 +456,6 @@
                     <height>170</height>
                     <orientation>vertical</orientation>
                     <itemgap>6</itemgap>
-
                     <control type="label">
                         <width>542</width>
                         <height>28</height>
@@ -516,14 +479,12 @@
                     </control>
                 </control>
             </control>
-
             <!-- ====================== FILE / NETWORK ====================== -->
             <control type="group">
                 <left>1225</left>
                 <top>575</top>
                 <width>560</width>
                 <height>220</height>
-
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
@@ -532,7 +493,6 @@
                     <aspectratio>stretch</aspectratio>
                     <texture colordiffuse="33000000">colors/white.png</texture>
                 </control>
-
                 <control type="label">
                     <left>22</left>
                     <top>14</top>
@@ -542,7 +502,6 @@
                     <textcolor>active</textcolor>
                     <label>[UPPERCASE]$LOCALIZE[21870] / $LOCALIZE[13279][/UPPERCASE]</label>
                 </control>
-
                 <control type="grouplist">
                     <left>22</left>
                     <top>58</top>
@@ -550,7 +509,6 @@
                     <height>175</height>
                     <orientation>vertical</orientation>
                     <itemgap>6</itemgap>
-
                     <control type="label">
                         <width>516</width>
                         <height>28</height>
@@ -580,6 +538,7 @@
                         <label>$LOCALIZE[13160]: [COLOR grey]$INFO[Network.GatewayAddress][/COLOR]</label>
                     </control>
                 </control>
-            </control>        </control>
+            </control>
+        </control>
     </controls>
 </window>

@@ -546,3 +546,23 @@ msgstr "Special Features"
 msgctxt "#31132"
 msgid "Item"
 msgstr "Artikel"
+
+msgctxt "#31133"
+msgid "Video decoder"
+msgstr "Videodecoder"
+
+msgctxt "#31134"
+msgid "Pixel format"
+msgstr "Pixelformat"
+
+msgctxt "#31135"
+msgid "Bit depth"
+msgstr "Bittiefe"
+
+msgctxt "#31136"
+msgid "Cores"
+msgstr "Kerne"
+
+msgctxt "#31137"
+msgid "Remaining"
+msgstr "übrig"

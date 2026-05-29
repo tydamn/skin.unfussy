@@ -546,3 +546,23 @@ msgstr ""
 msgctxt "#31132"
 msgid "Item"
 msgstr ""
+
+msgctxt "#31133"
+msgid "Video Decoder"
+msgstr ""
+
+msgctxt "#31134"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31135"
+msgid "Bit depth"
+msgstr ""
+
+msgctxt "#31136"
+msgid "Cores"
+msgstr ""
+
+msgctxt "#31137"
+msgid "Remaining"
+msgstr ""
